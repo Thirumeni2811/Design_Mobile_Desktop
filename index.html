@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <style>
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap);
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+  }
+.container{
+    background-color: white;
+    border-radius: 30px;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+img {
+    padding: 0;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 23px;
+    width: 80%;
+}
+.plan_image {
+    width: 40px;
+    margin-right: 10px;
+}
+.plan_details {
+    flex-grow: 1;
+    text-align: left;
+}
+.plan h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.plan p{
+    margin: 0;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+a{
+    text-decoration-line: none;
+    font-weight: bold;
+}
+a:hover{
+    color: hsl(245, 75%, 52%);
+}
+.button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 80%;
+    font-weight: bold;
+    margin: 23px;
+    box-shadow:1px 16px 20px hsl(255, 72%, 85%);
+}
+.button:hover{
+    background-color: hsl(224, 23%, 55%);
+    color: black;
+}
+.cancel {
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.cancel:hover{
+    color: hsl(245, 75%, 52%);
+}
+
+  
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/illustration-hero.svg" alt="music">
+        <div class="content">
+            <h2>Order Summary</h2>
+            <p style="text-align: center; color: #7280a7;margin-top: 0;">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        </div>
+        <div class="plan">
+            <img src="images/icon-music.svg" class="plan_image">
+            <div class="plan_details">
+                <h5>Annual plan</h5>
+                <p>$59.99/year</p>
+            </div>
+            <a href="#">Change</a>
+        </div>
+        <div class="button">Proceed to Payment</div>
+        <div class="cancel">Cancel Order</div>
+        <div class="cancel"><a href="/mobile.html">Mobile</a></div>
+    </div>
+</body>
+</html>
